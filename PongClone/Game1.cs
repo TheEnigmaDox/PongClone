@@ -35,6 +35,7 @@ namespace PongClone
         Rectangle mouseRect;
 
         TextRenderer titleText;
+        TextRenderer settingsButtonFont;
 
         GameState gameState = GameState.Title;
         GameSettings settings;
@@ -87,6 +88,10 @@ namespace PongClone
             titleText = new TextRenderer(Content.Load<SpriteFont>("Fonts/TestFont"),
                 new Vector2(1920 / 2,
                 1080 / 2));
+
+            settingsButtonFont = new TextRenderer(Content.Load<SpriteFont>("Fonts/SettingsButtonFont"),
+                new Vector2(1920 / 2,
+                1080 / 3 * 2));
 
             testTexture = Content.Load<Texture2D>("Textures/ScreenTest");
 
@@ -162,7 +167,7 @@ namespace PongClone
                 titleText.Tint = Color.White;
             }
 
-            Debug.WriteLine(titleText.ButtonBounds);
+            Debug.WriteLine(settingsButtonFont.ButtonBounds);
         }
 
         private void UpdateSettings()
@@ -238,6 +243,7 @@ namespace PongClone
 #endif
 
             titleText.DrawString(_spriteBatch, "Pong Clone");
+            settingsButtonFont.DrawString(_spriteBatch, "Settings");
             _spriteBatch.End();
 
             GraphicsDevice.SetRenderTarget(null);

@@ -1,6 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using System.ComponentModel.DataAnnotations;
 
 namespace EnigmaUtils
 {
@@ -15,7 +14,7 @@ namespace EnigmaUtils
             get { return m_buttonBounds; }
         }
 
-        private Color m_Tint;
+        private Color m_Tint = Color.White;
 
         public Color Tint
         {

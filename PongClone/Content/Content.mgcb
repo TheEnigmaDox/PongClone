@@ -13,6 +13,13 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin Fonts/SettingsButtonFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Fonts/SettingsButtonFont.spritefont
+
 #begin Fonts/TestFont.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
